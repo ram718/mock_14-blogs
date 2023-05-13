@@ -18,7 +18,6 @@ blogRouter.post("", async (req, res) => {
 // Get API
 blogRouter.get("", async (req, res) => {
   const { page, limit, title, category, sort, order } = req.query;
-  console.log("hy");
   try {
     if (page && limit) {
       const current = (page - 1) * limit || 0;
